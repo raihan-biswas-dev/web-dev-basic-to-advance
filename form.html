@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/nav.css">
+    <title>Html Form</title>
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>This Is Sohel vi Helmet Form</h1>
+    
+    <form action="">
+        <p>Name<input type="text" placeholder="Enter your name"></p>
+        <p>Email<input type="email" placeholder="Enter your email"></p>
+        <fieldset>
+            <legend>Select your job title</legend>
+
+            <p>
+                <label for="webdesign">
+                    <input type="radio" name="web Design" id="webdesign" name="job"> Web Design
+                </label>
+            </p>
+            <p>
+                <label for="graphicdesign">
+                    <input type="radio" name="web Design" id="graphicdesign" name="job"> Graphic Design
+                </label>
+            </p>
+            <p>
+                <label for="webdevelop">
+                    <input type="radio" name="web Design" id="webdevelop" name="job"> Web development
+                </label>
+            </p>
+            <p>
+                <label for="appdev">
+                    <input type="radio" name="web Design" id="appdev" name="job"> App development
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Select your job</legend>
+            <p><label for="web"><input type="checkbox" name="job" id="web">web design</label></p>
+            <p><label for="graphic"><input type="checkbox" name="job" id="graphic">graphic design</label></p>
+            <p><label for="webde"><input type="checkbox" name="job" id="webde">web development</label></p>
+            <p><label for="appde"><input type="checkbox" name="job" id="appde">app development</label></p>
+        </fieldset>
+        <p>spectial instruction</p>
+        <textarea name="instruction" id="" cols="30" rows="10"></textarea>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+</body>
+
+</html>

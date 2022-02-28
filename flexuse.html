@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexuse</title>
+    <script
+      src="https://kit.fontawesome.com/b29d87cfd1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+
+      nav a {
+        text-decoration: none;
+        margin-right:10px;
+        color:#000;
+        font-size:20px;
+      }
+
+      nav{
+        display: flex;
+        justify-content: space-between;
+      }
+      .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .login-form input,
+      button {
+        font-size: 1rem;
+        border: 0.0625rem solid lightgray;
+        margin-top: 0.9375rem;
+        padding: 0.625rem;
+        border-radius: 0.3125rem;
+      }
+
+      .login-form button {
+        background: orange;
+        font-weight: 700;
+        padding: 0.6875rem 0;
+        color: #fff;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </span>
+        <span>
+          <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </span>
+      </nav>
+    </header>
+
+    <section class="login-container">
+      <form action="" class="login-form">
+        <h1>Login</h1>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your mail"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Your password"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

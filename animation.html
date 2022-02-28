@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+
+    <style>
+      @keyframes ballDrop {
+        0% {
+          background: aqua;
+          left: 0;
+          top: 0;
+          transform: scale(.5);
+        }
+
+        25% {
+          background: blue;
+          top: 150px;
+          transform: scale(.6);
+        }
+        50% {
+          background: blue;
+          top: 0px;
+          transform: scale(.7);
+        }
+
+        75% {
+          background: green;
+          top: 150px;
+          transform: scale(.8);
+        }
+
+        100% {
+          background: red;
+          left: 780px;
+          top: 0px;
+        }
+      }
+
+      .field {
+        width: 830px;
+        height: 200px;
+        background: lightgray;
+        margin: 0 auto;
+      }
+
+      .ball {
+        width: 50px;
+        height: 50px;
+        background: red;
+        border-radius: 50%;
+        position: relative;
+        animation: ballDrop 3s ease-in-out 0.5s infinite alternate;
+        animation-play-state: running;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Let's Start Animation</h1>
+    <div class="field">
+      <div class="ball"></div>
+      <div class="ball-2"></div>
+    </div>
+  </body>
+</html>
